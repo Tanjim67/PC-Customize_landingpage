@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-7">
+            <div class="flex flex-row gap-2 justify-around">
+                <div class="w-2/6">
+                    <img src="images/mac.png" alt="" srcset="">
+                </div>
+                <div class=" px-5 w-2/4">
+                    <h4 class="text-2xl  mb-5 font-semibold"> Customize your Blue 24-inch <span
+                            class="font-semibold text-purple-600">iMac</span> with Apple M1 chip.
+                    </h4>
+
+                    <p class="font-normal text-sm text-justify"> Apple M1 chip with 8-core CPU with 4 performance cores
+                        and 4
+                        efficiency
+                        cores, 7-core GPU and 16
+                        core neural engine. 8GB unified memory 256 GB storage two thunderbolt/ USB 4 port Magic Mouse,
+                        Moagic keyboard US English</p>
+
+
+                    <!-- --------------------------memory select  -->
+                    <h4 class="text-sm font-semibold mt-8 mb-4"> Memory</h4>
+                    <div class="flex flex-auto font-normal text-sm gap-3">
+
+                        <button id="8gbMemory" class="border-2 border-gray-500 rounded p-2">8
+                            GB unified
+                            Memory</button>
+                        <button id="16gbMemory" class="border-2 border-gray-500 rounded p-2 ">16
+                            GB unified
+                            Memory</button>
+
+                    </div>
+
+                    <!-- ------------------------------- Storage select  -->
+
+
+                    <h4 class="text-sm font-semibold mt-8 mb-4"> Storage</h4>
+                    <div class="flex flex-auto font-normal text-sm gap-3">
+
+                        <button id="256gbStorage" class="border-2 border-gray-500 rounded p-2  ">256
+                            GB SSD
+                            Storage</button>
+                        <button id="512gbStorage" class="border-2 border-gray-500 rounded p-2  ">512
+                            GB SSD
+                            Storage</button>
+                        <button id="1tbStorage" class="border-2 border-gray-500 rounded p-2   ">1
+                            TB SSD
+                            Storage</button>
+                    </div>
+
+                    <!-- ------------------------------- delivery select  -->
+
+                    <h4 class="text-sm font-semibold mt-8 mb-4"> Choose your delivery options</h4>
+                    <div class="flex flex-auto font-normal text-sm gap-3 mb-10">
+
+                        <button id="prime" class="border-2 border-gray-500 rounded p-2  ">Free
+                            Prime delivery
+                        </button>
+                        <button id="nonprime" class="border-2 border-gray-500 rounded p-2">Regular
+                            delivery 20$
+                        </button>
+                    </div>
+
+                    <!-- -------------------------------------------- overall fees -->
+
+                    <div class="mb-8">
+                        <div class="flex flex-row justify-between">
+                            <div>
+                                <h5 class="text-base font-semibold  mb-4">Best Price </h5>
+                                <h5 class="text-base font-semibold  mb-4">Extra Memory Cost</h5>
+                                <h5 class="text-base font-semibold  mb-4">Extra Storage Cost</h5>
+                                <h5 class="text-base font-semibold  mb-4">Delivery Charge</h5>
+                                <hr>
+                                <h5 class="text-base font-semibold  mb-2">Total</h5>
+                            </div>
+                            <div class=" text-right">
+                                <h5 class="text-base font-semibold  mb-4">$<span id="bestPrice">1299</span></h5>
+                                <h5 class="text-base font-semibold  mb-4">$<span id="extraMem">0</span></h5>
+                                <h5 class="text-base font-semibold  mb-4">$<span id="extraSto">0</span></h5>
+                                <h5 class="text-base font-semibold  mb-4">$<span id="deliveryChr">0</span></h5>
+                                <hr>
+                                <h5 class="text-base font-semibold  mb-2">$<span id="totalCost">1299</span></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------  Add promo code  -->
+
+                    <div class="p-2">
+                        <h4 class="text-base font-semibold  mb-4" id="promoText"> Add Promo Code</h4>
+                        <div class="flex flex-row gap-2">
+                            <input class="text-base border-2 border-gray-400 rounded w-1/4 mb-1 text-center" type="text"
+                                placeholder="" id="promo">
+                            <button id="promoButton"
+                                class="border-2 border-red-500 rounded p-2  bg-red-400 text-white">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <h4 class="text-3xl  m-5 font-semibold text-center"> Total: $ <span id="netTotal">1299</span>
+        </h4>
+
+    </main>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
